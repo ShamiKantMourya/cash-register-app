@@ -11,7 +11,34 @@ body{
     color: #5451A6;
     margin: 70px;
    }
-
+   /* labels */
+   .bill, .cash{
+    font-size: 20px;
+    font-weight: bold;
+   }
+   /* input area */
+   #bill-amount{
+    margin: 15px;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid #5451A6 ;
+   }
+ #cash-given{
+    margin: 15px;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid #5451A6;
+ }
+  /* check button */
+  #check{
+    padding: 5px 10px;
+    background-color: #5451A6;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+  }
 /* Tables */
 .table{
     width: 60%;
