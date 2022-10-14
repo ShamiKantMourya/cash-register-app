@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
-
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -9,7 +8,7 @@ body{
    /* header */
    .container h1{
     color: #5451A6;
-    margin: 70px;
+    margin: 50px;
    }
    /* labels */
    .bill, .cash{
@@ -38,6 +37,7 @@ body{
     color: #fff;
     border-radius: 5px;
     font-weight: 400;
+    cursor: pointer;
   }
 /* Tables */
 .table{
@@ -46,9 +46,25 @@ body{
     border-collapse: collapse;
     margin: auto;
   }
+  .return{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
 th,td {
   border: 2px solid #5451A6;
   width: 0%;
   border-collapse: collapse;
   padding: 0.4rem;
+}
+/* footer */
+.footer {
+    margin-top: 90px;
+}
+.footer .fa-brands{
+    color: #5451A6;
+    margin: 5px;
+    padding: 0px 10px;
+    font-weight: bold;
+    font-size: 25px;
 }
