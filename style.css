@@ -6,6 +6,11 @@ body{
 .container{
     text-align: center;
 }
+   /* header */
+   .container h1{
+    color: #5451A6;
+    margin: 70px;
+   }
 
 /* Tables */
 .table{
