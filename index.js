@@ -25,5 +25,9 @@ checkCash.addEventListener("click", function validateBillAmountAndCash(){
 });
 
 function calculateChange(cashToBeReturned) {
-    
+    for (let i = 0; i< availableNotes.length; i++){
+            const numberOfNotes = Math.trunc(cashToBeReturned/availableNotes[i]);
+            cashToBeReturned = cashToBeReturned%availableNotes[i];  
+            noOfNotes[i].innerText = numberOfNotes;
+    }
 }
