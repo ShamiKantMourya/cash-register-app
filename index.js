@@ -4,11 +4,14 @@ const checkCash = document.querySelector('#checkbtn');
 const noOfNotes = document.querySelectorAll('.noOfNotes');
 const errorMessage = document.querySelector('#message');
 
+const availableNotes = [2000,500,100,20,10,5,1];
+
 checkCash.addEventListener("click", function validateBillAmountAndCash(){
     errorMessage.style.display = "none";
      if (billAmount.value > 0) {
        if (cashGiven.value >= billAmount.value) {
-        
+        const cashToBeReturned = cashGiven.value-billAmount.value;
+        calculateChange(cashToBeReturned);
        }
        else {
         errorMessage.style.display = "block";
@@ -20,3 +23,7 @@ checkCash.addEventListener("click", function validateBillAmountAndCash(){
     }
 
 });
+
+function calculateChange(cashToBeReturned) {
+    
+}
